@@ -5,7 +5,7 @@ import { IoMdCloudUpload } from 'react-icons/io'
 import { useEffect, useRef } from "react"
 import { useState } from "react"
 import { Pencil } from "lucide-react"
-import Editor from "../../components/editor/editor"
+import Editor from "../../components/editor/Editor"
 import useEditorStore from "../../utils/editorStore"
 import apiRequest from "../../utils/apiRequest"
 
