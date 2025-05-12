@@ -1,7 +1,7 @@
 
 
 import { useNavigate } from "react-router";
-import UserButton from "../userButton/userButton";
+import UserButton from "../userButton/UserButton";
 import "./navbar.css";
 import { Search } from "lucide-react";
 
