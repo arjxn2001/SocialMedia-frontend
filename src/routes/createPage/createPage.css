@@ -1,0 +1,49 @@
+.createFormItem{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.createFormItem label{
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(78, 78, 78);
+    
+}
+
+.createFormItem input,textarea,select{
+    font-size: 15px;
+    border: 2px solid rgb(245, 245, 245);
+    padding: 13px;
+    border-radius: 16px;
+}
+
+.createFormItem textarea{
+    resize: none;
+}
+
+.createFormItem small{
+    color: rgb(131, 131, 131);
+}
+
+@media (max-width:1133px) {
+    .createBottom{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 64px;
+    }
+}
+
+@media (max-width:660px) {
+    .createForm{
+        width: 100%;
+    }
+}
+
+@media (max-width:414px) {
+    .upload{
+        width: 100%;
+        height: 400px;
+    }
+}
