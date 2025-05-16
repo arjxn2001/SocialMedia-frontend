@@ -1,7 +1,7 @@
 import { IKImage } from 'imagekitio-react';
 
 const Image = ({ path, src, alt, className, w, h }) => {
-  const urlEndpoint = import.meta.env.VITE_URL_IK_ENDPOINT;
+  const urlEndpoint = "https://ik.imagekit.io/tmxmqnd6a";
 
   if (!path && !src) return null;
 

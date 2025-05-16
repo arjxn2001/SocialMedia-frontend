@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiRequest = axios.create({
-    baseURL: import.meta.env.VITE_API_ENDPOINT,
+    baseURL: "https://socialmedia-backend-fu0q.onrender.com",
     withCredentials: true,
 })
 
