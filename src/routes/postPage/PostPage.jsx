@@ -35,7 +35,7 @@ const PostPage = () => {
           
           <PostInteraction postId={id}/>
           <Link to={`/profile/${data.user.userName}`} className="postUser">
-            <Image path={data.user.img || "/general/noAvatar.png"} />
+            <Image src={data.user.img || "/general/noAvatar.png"} />
             <span className='text-md font-bold '>{data.user.displayName}</span>
           </Link>
           <Comments id={data._id}/>
