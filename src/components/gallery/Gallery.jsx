@@ -9,7 +9,7 @@ import GalleryItem from "../galleryItem/GalleryItem";
 
 const fetchPins = async ({ pageParam, search, userId , boardId}) => {
   const res = await axios.get(
-    `https://socialmedia-backend-fu0q.onrender.com/pins?cursor=${pageParam}&search=${search || ""}&userId=${userId || ""}&boardId=${boardId || ""}`
+    `${import.meta.env.VITE_API_ENDPOINT}/pins?cursor=${pageParam}&search=${search || ""}&userId=${userId || ""}&boardId=${boardId || ""}`
   );
   return res.data;
 };

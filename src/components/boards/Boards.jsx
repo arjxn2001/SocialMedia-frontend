@@ -23,15 +23,15 @@ const Boards = ({userId}) => {
   return (
     <div className='collections '>
         {/* collection */}
-        {data?.map((board)=> (
-        <Link to={`/search?boardId=${board._id}`} className="collection" key={board._id}>
-        <Image src={board.firstPin.media} alt=""/>
-        <div className="collectionInfo">
-          <h1>{board.title}</h1>
-          <span>{board.pinCount} Pins . {format(board.createdAt)}</span>
-        </div>
-      </Link>
-      )) }
+        {data?.filter(b => b.firstPin?.media).map((board) => (
+  <Link to={`/search?boardId=${board._id}`} className="collection" key={board._id}>
+    <Image src={board.firstPin.media} alt="" />
+    <div className="collectionInfo">
+      <h1>{board.title}</h1>
+      <span>{board.pinCount} Pins · {format(board.createdAt)}</span>
+    </div>
+  </Link>
+))}
       
 
     </div>
