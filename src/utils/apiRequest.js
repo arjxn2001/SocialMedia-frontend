@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiRequest = axios.create({
-  baseURL: "http://localhost:3000/",
+  baseURL: "https://socialmedia-backend-fu0q.onrender.com",  //"http://localhost:3000/"
   withCredentials: true, // keep this if your backend uses cookies (optional)
 });
 
